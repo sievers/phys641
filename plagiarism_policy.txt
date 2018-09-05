@@ -1,0 +1,7 @@
+The official McGill plagiarism policy is at:
+https://www.mcgill.ca/students/srr/academicrights/integrity/cheating
+
+I have no problem with students talking together.  However, you must
+do your own work/type in your own codes without looking at other's
+work.  If two codes come in looking identical, I will consider that a
+violation. 
