@@ -48,3 +48,11 @@ th,tl=read_template(template_name)
 
 #matched_filt_h=numpy.fft.irfft(numpy.fft.rfft(strain_white)*numpy.conj(numpy.fft.rfft(th_white)))
 #matched_filt_l=numpy.fft.irfft(numpy.fft.rfft(strain_white)*numpy.conj(numpy.fft.rfft(tl_white)))
+
+
+
+
+#copied from bash from class
+# strain2=np.append(strain,np.flipud(strain[1:-1]))
+# tobs=len(strain)*dt
+# k_true=np.arange(len(myft))*dnu

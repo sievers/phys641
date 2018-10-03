@@ -15,6 +15,6 @@ mycorr_ft=np.fft.rfft(mycorr2)
 print np.mean(np.abs(np.real(mycorr_ft))), np.mean(np.abs(np.imag(mycorr_ft)))
 mycorr_ft=np.real(mycorr_ft)
 mycorr_ft[mycorr_ft<0]=0
-myps=np.sqrt(mycorr_ft)
-mydat=np.fft.irfft(myps*gft)
+myamp=np.sqrt(mycorr_ft)
+mydat=np.fft.irfft(myamp*gft)
 mydat_use=mydat[:n]
