@@ -6,7 +6,7 @@ msun=2e33
 G=6.67e-8
 c=3e10
 
-m1=1.4*msun
+m1=30*msun
 m2=m1
 M=m1+m2
 
