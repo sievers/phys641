@@ -2,6 +2,7 @@ import numpy as np
 import simple_read_ligo as rl
 
 
+
 def make_ft_vec(n):
     #make a routine to make a vector that goes from
     #0 to n/2, then -n/2 up to -1
