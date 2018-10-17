@@ -2,8 +2,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 import healpy
 #let's make a plot of individual Ylm's
-l=10
-m=10
+l=200
+m=100
 
 nlm=(l+1)*(l+2)/2  #where does this come from?
 
@@ -16,9 +16,10 @@ for mm in range(m):
 icur=icur+(l-m)
 
 alm=np.zeros(nlm,dtype='complex')
-alm[icur]=1.0
+alm[icur]=1.0J
 nside=256
 map=healpy.alm2map(alm,nside)
+alm_back=healpy.map2alm(map,lmax=l,iter=1)
 plt.ion()
 healpy.mollview(map)
 plt.title('l='+repr(l)+', m='+repr(m))
