@@ -12,13 +12,13 @@ dat=np.random.randn(ndat)
 A=sparse.csr_matrix((np.ones(ndat),(ind,ipix_vec)),shape=[ndat,npix])
 map=np.random.randn(npix)
 
-
-t1=time.time()
-ATd=A.transpose()*dat
-Am=A*map
-t2=time.time()
-dt1=t2-t1
-print 'sparse projection took ',dt1
+for i in range(10):
+    t1=time.time()
+    ATd=A.transpose()*dat
+    Am=A*map
+    t2=time.time()
+    dt1=t2-t1
+    print 'sparse projection took ',dt1
 
 
 t1=time.time()
