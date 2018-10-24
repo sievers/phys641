@@ -25,7 +25,7 @@ def simple_cg(x,b,A,niter=20):
 n=1000
 A=np.random.randn(n,n)
 A=np.dot(A.transpose(),A)
-A=A+np.eye(n)*50
+A=A+np.eye(n)*500
 b=np.random.randn(n)
 x=0*b
 
