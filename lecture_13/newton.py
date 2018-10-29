@@ -31,8 +31,9 @@ for j in range(5):
     lhs=grad.transpose()*grad
     rhs=grad.transpose()*r
     dp=numpy.linalg.inv(lhs)*(rhs)
-    for jj in range(p.size):
-        p[jj]=p[jj]+dp[jj]
+    p=p+dp
+    #for jj in range(p.size):
+    #    p[jj]=p[jj]+dp[jj]
     print p,err
 plt.plot(t,pred)
 plt.savefig('lorentz_fit.png')
