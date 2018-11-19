@@ -1,8 +1,8 @@
 import numpy as np
 from matplotlib import pyplot as plt
 #figure out how far away an off-axis source focuses, and what phase errors look like
-D_dish=0.5 
-f_ratio=10
+D_dish=1.5 
+f_ratio=1
 f=D_dish*f_ratio;
 th_deg=0.5;th=th_deg*np.pi/180 #are we in focus at a distance of th_deg from center?
 
@@ -11,7 +11,7 @@ a=0.25/f #equation for parabola
 lamda=500e-9
 
 x=np.linspace(-rdish,rdish,20)
-d=np.linspace(0.95,1.05,100001)*f
+d=np.linspace(0.75,1.25,100001)*f
 
 dtot=np.zeros([len(d),len(x)])
 
